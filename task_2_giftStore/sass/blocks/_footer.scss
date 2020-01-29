@@ -1,0 +1,130 @@
+.footer {
+
+    &__inner {
+        padding: 0 220px 40px;
+        background-color: #FAFAFA;
+
+        @media #{$desktop-md} {
+            padding: 0 150px 40px;
+        }
+
+        @media #{$desktop-sm} {
+            padding: 0 50px 40px;
+        }
+
+        
+        @media #{$mobile-lg} {
+            padding: 0 30px 20px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 115px 0 43px;
+        border-bottom: 1px solid #000000;
+        margin-bottom: 56px;
+
+        @media #{$desktop-sm} {
+            padding: 80px 0 43px;
+        }
+
+        @media #{$tablet} {
+            flex-direction: column;
+            padding: 40px 0;
+        }
+
+        @media #{$mobile-lg} {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 800;
+        transition: .2s linear color;
+
+        + .footer__link {
+            margin-left: 81px;
+
+            @media #{$tablet} {
+                margin-left: 0;
+
+
+            }
+        }
+
+        &:hover {
+            color: #F7941E;
+        }
+
+        @media #{$tablet} {
+            font-size: 20px;
+
+            &:nth-child(1),
+            &:nth-child(4) {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    &__logo {
+        font-family: 'Homemade Apple', cursive;
+        line-height: 39px;
+        color: #F7941E;
+        margin: 0 141px;
+
+        @media #{$tablet} {
+            order: -1;
+            margin: 0;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 72.8px;
+
+        
+        @media #{$mobile-lg} {
+            margin-bottom: 30px;
+        }
+
+        .facebook, 
+        .twitter,
+        .instagram,
+        .youtube,
+        .pinterest {
+            width: 38.4px;
+            height: 38.4px;
+            transition: .2s linear fill;
+
+            &:hover {
+                fill: #F7941E;
+            }
+        }
+
+        .footer__social-item + .footer__social-item {
+            margin-left: 25.6px;
+
+            @media #{$mobile-lg} {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+
+        .privacy {
+            margin-left: 14px;
+        }
+    }
+}

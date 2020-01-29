@@ -1,0 +1,36 @@
+@import "blocks/vars";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 18px 'Gilroy', sans-serif;
+    color: #000000;
+}
+
+// Imports
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/work";
+@import "blocks/gifts";
+@import "blocks/signup";
+@import "blocks/blogs";
+@import "blocks/footer";

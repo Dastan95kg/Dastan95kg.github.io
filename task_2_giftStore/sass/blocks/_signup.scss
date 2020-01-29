@@ -1,0 +1,69 @@
+.signup {
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 81px 235px;
+        background-color: #F7941E;
+
+        @media #{$desktop-lg} {
+            padding: 81px 150px;
+        }
+
+        @media #{$desktop-md} {
+            padding: 81px 100px;
+        }
+
+        @media #{$desktop-sm} {
+            padding: 81px 40px;
+        }
+
+        @media #{$tablet} {
+            flex-direction: column;
+            padding: 60px 20px;
+        }
+        
+        @media #{$mobile-md} {
+            padding: 30px 10px;
+            text-align: center;
+        }
+    }
+
+    &__title {
+
+        @media #{$tablet} {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__subtitle {
+
+        @media #{$tablet} {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+        line-height: 45px;
+
+        @media #{$mobile-lg} {
+            line-height: 30px;
+        }
+
+        @media #{$mobile-md} {
+            font-size: 25px;
+        }
+    }
+
+    &__buttons {
+
+        @media #{$tablet-sm} {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
