@@ -1,0 +1,63 @@
+@import "blocks/vars"; 
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.block-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 70px;
+
+    @media #{$medium} {
+        margin-bottom: 20px !important;
+        font-size: 25px;
+    }
+}
+
+// Imports
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/video";
+@import "blocks/features";
+@import "blocks/technology";
+@import "blocks/download";
+@import "blocks/contact";
+@import "blocks/footer";

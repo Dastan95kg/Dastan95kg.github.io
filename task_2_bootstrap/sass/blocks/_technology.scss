@@ -1,0 +1,36 @@
+.technology {
+    padding: 83px 0 100px;
+
+    @media #{$medium} {
+        padding: 50px 0;
+    }
+
+    &__item {
+        padding-bottom: 26px;
+
+        &-box {
+            padding: 0 69px;
+            font-size: 100px;
+            line-height: 120px;
+            color: rgba(16, 16, 16, 0.08);
+            margin-bottom: 20px;
+        }
+
+        &-img {
+            bottom: -10%;
+        }
+
+        &-title {
+            font-size: 18px;
+            line-height: 22px;
+            color: #101010;
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            font-size: 12px;
+            line-height: 14px;
+            padding: 0 20px;
+        }
+    }
+}

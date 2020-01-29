@@ -1,0 +1,100 @@
+.contact {
+    padding: 110px 0;
+
+    @media #{$medium} {
+        padding: 50px 0;
+    }
+
+    &__content {
+
+        @media #{$medium} {
+            flex-direction: column;
+        }
+    }
+
+    &__data {
+        padding: 0 30px;
+
+        @media #{$medium} {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media #{$small} {
+            padding: 0 15px;   
+        }
+
+        &-title {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 43px;
+            margin-bottom: 60px;
+
+            @media #{$medium} {
+                margin-bottom: 20px;
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+    
+        &-text {
+            line-height: 20px;
+            padding-right: 80px;
+
+            @media #{$medium} {
+                text-align: center !important;
+                padding-right: 0;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__form {
+        line-height: 19px;
+        color: rgba(19, 39, 67, 0.5);
+        border-radius: 6px;
+
+        .form-control {
+            padding: 29px 0 29px 30px;
+        }
+
+        .custom-select {
+            height: 60px;
+            padding-left: 30px;
+        }
+
+        select {
+            font-size: 16px !important;
+            color: rgba(19, 39, 67, 0.5) !important;
+        }
+
+        .btn {
+
+            &:hover {
+                background: #ED4C5C;
+                color: #fff;
+                border-color: #ED4C5C;
+            }
+
+            @media #{$medium} {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        // Changing size of placeholders
+        ::-webkit-input-placeholder {
+            font-size: 16px!important;
+            color: rgba(19, 39, 67, 0.5) !important;
+        }
+        
+        :-moz-placeholder { /* Firefox 18- */
+            font-size: 16px!important;
+            color: rgba(19, 39, 67, 0.5) !important;
+        }
+        ::-moz-placeholder {  /* Firefox 19+ */
+            font-size: 16px!important;
+            color: rgba(19, 39, 67, 0.5) !important;
+        }
+    }
+}
