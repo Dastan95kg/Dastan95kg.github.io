@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SVG Sprite -->
+    <svg display='none'>
+        <symbol id="vk" viewBox="0 0 511.962 511.962">
+            <path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+            c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+            c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+            c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+            c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+            c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+            c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+            c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+            c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+            s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+            C488.583,400.807,524.359,398.599,507.399,370.471z"/>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <path d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+            c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+            c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+            c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+            c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+            C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+            C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </symbol>
+        <symbol id="insta" viewBox="0 0 512 512">
+            <path d="m75 512h362c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-362c-24.8125 0-45-20.1875-45-45zm0 0"/><path d="m256 391c74.4375 0 135-60.5625 135-135s-60.5625-135-135-135-135 60.5625-135 135 60.5625 135 135 135zm0-240c57.898438 0 105 47.101562 105 105s-47.101562 105-105 105-105-47.101562-105-105 47.101562-105 105-105zm0 0"/><path d="m406 151c24.8125 0 45-20.1875 45-45s-20.1875-45-45-45-45 20.1875-45 45 20.1875 45 45 45zm0-60c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+        </symbol>
+        <symbol id="burger" viewBox="0 0 469.333 469.333">
+            <path d="M53.333,106.667H416c29.417,0,53.333-23.927,53.333-53.333S445.417,0,416,0H53.333C23.917,0,0,23.927,0,53.333
+				S23.917,106.667,53.333,106.667z"/>
+			<path d="M416,181.333H53.333C23.917,181.333,0,205.26,0,234.667S23.917,288,53.333,288H416c29.417,0,53.333-23.927,53.333-53.333
+				S445.417,181.333,416,181.333z"/>
+			<path d="M416,362.667H53.333C23.917,362.667,0,386.594,0,416s23.917,53.333,53.333,53.333H416
+				c29.417,0,53.333-23.927,53.333-53.333S445.417,362.667,416,362.667z"/>
+        </symbol>
+    </svg>
+
+    
+    <!-- .intro -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <nav class="nav">
+                    <div class="nav__links">
+                        <a href="#" class="nav__link">Услуги</a>
+                        <a href="#" class="nav__link">Портфолио</a>
+                        <a href="#" class="nav__link">Стоимость</a>
+                    </div>
+                    <div class="nav__call">
+                        <div class="nav__number">+7 (499) 995-55-77</div>
+                        <button type="button" class="btn">Заказать звонок</button>
+                    </div>
+                    <!-- Burger Menu -->
+                    <a class="burger-link" href="#">
+                        <svg class="burger" display='none'>
+                            <use xlink:href="#burger"></use>
+                        </svg>
+                    </a>
+                </nav>
+                <div class="intro__content">
+                    <div class="intro__data">
+                        <h1 class="intro__title">Дмитрий Алексеев</h1>
+                        <div class="intro__subtitle">Frontend-разработчик и веб-верстальщик</div>
+                        <button type="button" class="btn">Узнать больше</button>
+                    </div>
+                    <img class="intro__image" src="img/Dmitry Alekseev.png" alt="">
+                </div>
+            </div> <!-- /.intro__inner -->
+        </div> <!-- /.container -->
+    </section> <!-- .intro -->
+
+    
+    <!-- .advantages -->
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages__title">Что я делаю</div>
+                <div class="advantages__content">
+                    <div class="advantages__item">
+                        <img class="advantages__img" src="img/icons/tools-and-utensils.png" alt="">
+                        <p class="advantages__text">
+                            Вёрстка лендинг-страниц и сайтов любой сложности
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__img" src="img/icons/responsive.png" alt="">
+                        <p class="advantages__text">
+                            Адаптивная вёрстка под все браузеры и устройства
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__img" src="img/icons/programming.png" alt="">
+                        <p class="advantages__text">
+                            Frontend-разработка и программирование
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__img" src="img/icons/coding.png" alt="">
+                        <p class="advantages__text">
+                            Исправление и доработка существующей вёрстки
+                        </p>
+                    </div>
+                </div> <!-- /.advantages__content -->
+                <button type="button" class="btn btn--large">Узнать стоимость</button>
+            </div> <!-- .advantages__inner -->
+        </div> <!-- .container -->
+    </section> <!-- .advantages -->
+
+    
+    <!-- .works -->
+    <section class="works">
+        <div class="container">
+            <div class="works__inner">
+                <div class="works__title">Примеры моих работ</div>
+                <div class="works__content">
+                    <div class="works__item">
+                        <a href="#"><img class="works__img" src="img/Portfolio_1.png" alt=""></a>
+                        <a href="#"><p class="works__text">Сайт психолога Веры Антоновой</p></a>
+                    </div>
+                    <div class="works__item">
+                        <a href="#"><img class="works__img" src="img/Portfolio_2.png" alt=""></a>
+                        <a href="#"><p class="works__text">Сайт магазина детской одежды</p></a>
+                    </div>
+                    <div class="works__item">
+                        <a href="#"><img class="works__img" src="img/Portfolio_3.png" alt=""></a>
+                        <a href="#"><p class="works__text">Сайт магазина «Рыболов»</p></a>
+                    </div>
+                </div> <!-- /.works__content -->
+                <button type="button" class="btn btn--large">Заказать проект</button>
+            </div> <!-- /.works__inner -->
+        </div> <!-- .container -->
+    </section> <!-- /.works -->
+
+    
+    <!-- .offer -->
+    <section class="offer">
+        <div class="container">
+            <div class="offer__inner">
+                <h2 class="offer__title">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
+                <div class="offer__subtitle">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</div>
+            </div> <!-- /.offer__inner -->
+        </div> <!-- /.container -->
+    </section> <!-- /.offer -->
+
+
+    <!-- .footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Услуги</a>
+                    <a href="#" class="footer__link">Портфолио</a>
+                    <a href="#" class="footer__link">Стоимость</a>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contact">
+                        <img class="footer__icon" src="img/icons/call-answer.png" alt="">
+                        <div class="footer__data">+7 (499) 995-77-55</div>
+                    </div>
+                    <div class="footer__contact">
+                        <img class="footer__icon" src="img/icons/envelope.png" alt="">
+                        <div class="footer__data">dmitry@alekseev.com</div>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <button class="btn btn--large">Заказать звонок</button>
+                    <div class="footer__social-icons">
+                        <a href="#">    
+                            <svg class="vk">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="facebook">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="insta">
+                                <use xlink:href="#insta"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- /.footer__inner -->
+        </div> <!-- /.container -->
+    </footer>
+
+
+    <!-- .copyright -->
+    <div class="copyright">
+        <div class="copyright__content">&copy; Дмитрий Алексеев, 2016-2018</div>
+    </div>
+
+</body>
+</html>
