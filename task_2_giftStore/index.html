@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Gift Store</title>
+</head>
+<body>
+    
+    <!-- SVG Sprite -->
+    <svg display="none">
+        <symbol id="facebook" viewBox="0 0 97.75 97.75">
+            <path d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z
+            M67.521,24.89l-6.76,0.003c-5.301,0-6.326,2.519-6.326,6.215v8.15h12.641L67.07,52.023H54.436v32.758H41.251V52.023H30.229V39.258
+            h11.022v-9.414c0-10.925,6.675-16.875,16.42-16.875l9.851,0.015V24.89L67.521,24.89z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"/>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <path d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0"/><path d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"/>
+        </symbol>
+        <symbol id="youtube" viewBox="0 0 512 512">
+            <path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"/>
+        </symbol>
+        <symbol id="pinterest" viewBox="0 0 97.75 97.75">
+            <path d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
+            M54.499,65.109c-4.521,0-8.773-2.444-10.229-5.219c0,0-2.432,9.645-2.943,11.506c-1.813,6.58-7.146,13.162-7.561,13.701
+            c-0.289,0.375-0.928,0.258-0.994-0.24c-0.113-0.838-1.475-9.139,0.127-15.909c0.801-3.4,5.383-22.814,5.383-22.814
+            s-1.334-2.673-1.334-6.625c0-6.205,3.596-10.837,8.074-10.837c3.807,0,5.645,2.859,5.645,6.286c0,3.828-2.436,9.552-3.693,14.856
+            c-1.051,4.441,2.225,8.064,6.605,8.064c7.933,0,13.272-10.188,13.272-22.261c0-9.174-6.176-16.044-17.418-16.044
+            c-12.697,0-20.615,9.471-20.615,20.052c0,3.646,1.078,6.221,2.764,8.21c0.773,0.915,0.883,1.283,0.602,2.333
+            c-0.203,0.771-0.66,2.625-0.854,3.358c-0.279,1.062-1.137,1.44-2.098,1.049c-5.846-2.387-8.572-8.793-8.572-15.994
+            c0-11.893,10.029-26.154,29.922-26.154c15.985,0,26.506,11.566,26.506,23.984C77.089,52.839,67.956,65.109,54.499,65.109z"/>
+        </symbol>
+        <symbol id="burger" viewBox="0 0 341.333 341.333">
+            <rect x="128" y="128" width="85.333" height="85.333"/>
+			<rect x="0" y="0" width="85.333" height="85.333"/>
+			<rect x="128" y="256" width="85.333" height="85.333"/>
+			<rect x="0" y="128" width="85.333" height="85.333"/>
+			<rect x="0" y="256" width="85.333" height="85.333"/>
+			<rect x="256" y="0" width="85.333" height="85.333"/>
+			<rect x="128" y="0" width="85.333" height="85.333"/>
+			<rect x="256" y="128" width="85.333" height="85.333"/>
+			<rect x="256" y="256" width="85.333" height="85.333"/>
+        </symbol>
+    </svg>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="nav">
+                    <div class="nav__logo">logo</div>
+                    <div class="nav__links">
+                        <a href="#" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">About Us</a>
+                        <a href="#" class="nav__link">Services</a>
+                        <a href="#" class="nav__link">Blogs</a>
+                    </div>
+                    <button class="btn">Gift Finder</button>
+                    <!-- Burger menu -->
+                    <a href="#" class="burger" display="none">
+                        <svg class="burger-icon">
+                            <use xlink:href="#burger"></use>
+                        </svg>
+                    </a>
+                </div> <!-- /.nav -->
+                <div class="intro">
+                    <div class="intro__content">
+                        <h1 class="intro__title">Find a gift for your wife or girlfriend</h1>
+                        <div class="intro__subtitle">Struggling to find a gift for your wife or girlfriend? No problem!</div>
+                        <div class="intro__btn">
+                            <button type="button" class="btn btn--lg">Find gift now</button>
+                        </div>
+                    </div>
+                    <div class="intro__image">
+                        <img class="intro__img" src="img/Background.png" alt="">
+                    </div>
+                </div>
+            </div> <!-- /.header__inner -->
+        </div> <!-- /.container -->
+    </header>
+
+
+    <!-- .work -->
+    <section class="work">
+        <div class="container">
+            <div class="work__inner">
+                <div class="work__image">
+                    <img class="work__img" src="img/Media Background.png" alt="">
+                </div>
+                <div class="work__content">
+                    <div class="work__title">How we work</div>
+                    <div class="work__text">We've actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.</div>
+                    <div class="work__btn">
+                        <button type="button" class="btn btn--lg">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gifts">
+        <div class="container">
+            <div class="gifts__inner">
+                <div class="gifts__title">Gifts for all Occasions</div>
+                <div class="gifts__subtitle">"Try our web app to find the best gifts for all occasions"</div>
+                <div class="gifts__content">
+                    <div class="gifts__item">
+                        <div class="gifts__image">
+                            <img class="gifts__img" src="img/Rectangle.png" alt="">
+                        </div>
+                        <div class="gifts__holiday">Birthday</div>
+                        <a class="gifts__btn" href="#">See More ›</a>
+                    </div>
+                    <div class="gifts__item">
+                        <div class="gifts__image">
+                            <img class="gifts__img" src="img/Rectangle (1).png" alt="">
+                        </div>
+                        <div class="gifts__holiday">Anniversary</div>
+                        <a class="gifts__btn" href="#">See More ›</a>
+                    </div>
+                    <div class="gifts__item">
+                        <div class="gifts__image">
+                            <img class="gifts__img" src="img/Rectangle (2).png" alt="">
+                        </div>
+                        <div class="gifts__holiday">Valentine's Day</div>
+                        <a class="gifts__btn" href="#">See More ›</a>
+                    </div>
+                    <div class="gifts__item">
+                        <div class="gifts__image">
+                            <img class="gifts__img" src="img/Rectangle (3).png" alt="">
+                        </div>
+                        <div class="gifts__holiday">Christmas</div>
+                        <a class="gifts__btn" href="#">See More ›</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- .signup -->
+    <div class="signup">
+        <div class="container">
+            <div class="signup__inner">
+                <div class="signup__text">
+                    <h4 class="signup__title">Ready to get started?</h4>
+                    <p class="signup__subtitle">Sign up or contact us</p>
+                </div>
+                <div class="signup__buttons">
+                    <button class="btn btn--lg btn--black">Find gift now</button>
+                    <button class="btn btn--lg btn--black">How it works</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .blogs -->
+    <section class="blogs">
+        <div class="container">
+            <div class="blogs__inner">
+                <div class="blogs__title">Our Best Blogs Ever</div>
+                <div class="blogs__subtitle">"Try our blog to find the best tips and tricks to select your gift"</div>
+                <div class="main">
+                    <div class="main__image">
+                        <img src="img/Media.png" alt="" class="main__img">
+                    </div>
+                    <div class="main__content">
+                        <div class="main__author">Mr. John Doe</div>
+                        <div class="main__title">The best way to wish your wife</div>
+                        <a href="#" class="main__btn">Read more</a>
+                    </div>
+                </div>
+                <div class="secondary-box">
+                    <div class="secondary">
+                        <h5 class="secondary__title">Database to find the gifts for your girlfriend</h5>
+                        <div class="secondary__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed do euismod tempor incididunt ut labore et dolore...</div>
+                        <a href="#" class="secondary__btn">Read more</a>
+                    </div>
+                    <div class="secondary">
+                        <h5 class="secondary__title">How Artificial Intelligence read your mind to find the best gift</h5>
+                        <div class="secondary__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed do euismod tempor incididunt ut labore et dolore...</div>
+                        <a href="#" class="secondary__btn">Read more</a>
+                    </div>
+                </div>
+            </div> <!-- /.blogs__inner -->
+        </div> <!-- /.container -->
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link">About</a>
+                    <div href="#" class="footer__logo">logo</div>
+                    <a href="#" class="footer__link">Service</a>
+                    <a href="#" class="footer__link">Blog</a>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-item">
+                        <svg class="facebook">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <svg class="twitter">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <svg class="instagram">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <svg class="youtube">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <svg class="pinterest">
+                            <use xlink:href="#pinterest"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__copyright">&copy; 2010-2020 <span class="privacy">Privacy-Terms</span></div>
+            </div> <!-- /.footer__inner -->
+        </div>
+    </footer>
+
+</body>
+</html>
