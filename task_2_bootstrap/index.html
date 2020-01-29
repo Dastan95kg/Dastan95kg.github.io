@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- CSS -->
+<link rel="stylesheet" href="css/main.css">
+<title>Cloudbudget</title>
+</head>
+<body>
+
+    <!-- SVG Sprite -->
+    <svg display="none">
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <path d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
+        </symbol>
+        <symbol id="linkedin" viewBox="0 0 512 512">
+            <rect y="160" width="114.496" height="352"/>
+            <path d="M426.368,164.128c-1.216-0.384-2.368-0.8-3.648-1.152c-1.536-0.352-3.072-0.64-4.64-0.896
+                c-6.08-1.216-12.736-2.08-20.544-2.08c-66.752,0-109.088,48.544-123.04,67.296V160H160v352h114.496V320
+                c0,0,86.528-120.512,123.04-32c0,79.008,0,224,0,224H512V274.464C512,221.28,475.552,176.96,426.368,164.128z"/>
+            <circle cx="56" cy="56" r="56"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+            c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+            c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+            c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+            c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+            C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+            C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </symbol>
+    </svg>
+
+
+    <!-- .header -->
+    <header class="header text-white">
+        <div class="header__wrapper">
+            <div class="container">
+                <nav class="header__nav navbar navbar-expand-lg text-uppercase">
+                    <a class="header__logo navbar-brand d-flex align-items-center font-weight-bold" href="#">
+                        <img class="d-inline-block mr-2" src="img/cloud.png" width="25" height="18" alt="">
+                        Cloudbudget
+                    </a>
+                    <button class="navbar-toggler navbar-dark border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="header__links navbar-nav mx-auto">
+                        <li class="header__link nav-item">
+                            <a class="nav-link" href="#">Overview</a>
+                        </li>
+                        <li class="header__link nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="header__link nav-item">
+                            <a class="nav-link" href="#">Technology</a>
+                        </li>
+                        <li class="header__link nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="header__link nav-item">
+                            <a class="nav-link" href="#">Sign up</a>
+                        </li>
+                    </ul>
+                    <div class="header__language d-flex align-items-center mr-4">
+                        <img class="header__language-usa" src="img/united-states.png" width="32" height="32" alt="">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EN
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">RU</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">KG</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light btn-lg text-uppercase shadow-none">Login</button>
+                    </div>
+                </nav>
+                <div class="header__content">
+                    <h1 class="header__title text-uppercase font-weight-bold text-center">Cloudbudget</h1>
+                    <p class="header__subtitle text-center">Cloud budget management for everyone. Only &euro;69.95 a Month After a 7 Day Trial of Up to &euro;4.99</p>
+                    <button type="button" class="btn btn-outline-light btn-lg px-5 py-3 d-block mx-auto text-uppercase shadow-none">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- .video -->
+    <section class="video">
+        <div class="container">
+            <div class="row video__row">
+                <div class="col video__content d-flex flex-column justify-content-center align-items-center">
+                    <div class="video__title mb-5">Easy to Use Cloud Budget Management Software</div>
+                    <div class="video__subtitle mb-4 text-justify">Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</div>
+                    <a href="#" class="video__link text-decoration-none align-self-start">Learn More</a>
+                </div>
+                <div class="col video__image">
+                    <img src="img/video-section.png" alt="" class="video__img d-block mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- .features -->
+    <section class="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="block-title text-center">Features</div>
+                <div class="row features__items">
+                    <div class="col features__item">
+                        <div class="features__image position-relative">
+                            <img class="features__img" src="img/features1.png" alt="">
+                        </div>
+                        <div class="features__content position-absolute bg-white shadow rounded-lg text-center">
+                            <div class="features__content-title font-weight-bold">Supports All Currencies and Cards</div>
+                            <div class="features__content-text ">We support all popular currencies and is fully customizable to add</div>
+                            <a href="#" class="features__content-btn font-weight-bold text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col features__item">
+                        <div class="features__image position-relative">
+                            <img class="features__img" src="img/features2.png" alt="">
+                        </div>
+                        <div class="features__content position-absolute bg-white shadow rounded-lg text-center">
+                            <div class="features__content-title font-weight-bold">Manage your expenses on the go</div>
+                            <div class="features__content-text ">You can access your account from anywhere in the world on any device</div>
+                            <a href="#" class="features__content-btn font-weight-bold text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col features__item">
+                        <div class="features__image position-relative">
+                            <img class="features__img" src="img/features3.png" alt="">
+                        </div>
+                        <div class="features__content position-absolute bg-white shadow rounded-lg text-center">
+                            <div class="features__content-title font-weight-bold">Cloud Budget Management Software</div>
+                            <div class="features__content-text ">Our software is made so you can access and manage your budget</div>
+                            <a href="#" class="features__content-btn font-weight-bold text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- .technology -->
+    <section class="technology">
+        <div class="container">
+            <div class="technology__inner">
+                <div class="block-title text-center mb-5">Technology</div>
+                <div class="row technology__items">
+                    <div class="col technology__item text-center">
+                        <div class="technology__item-box d-flex justify-content-center position-relative font-weight-bold">
+                            01
+                            <img class="technology__item-img position-absolute" src="img/technology1.png" alt="">
+                        </div>
+                        <div class="technology__item-title font-weight-bold">Cloud Storage</div>
+                        <div class="technology__item-text">Access your account from anywhere in the world on any device</div>
+                    </div>
+                    <div class="col technology__item text-center">
+                        <div class="technology__item-box d-flex justify-content-center position-relative font-weight-bold">
+                            02
+                            <img class="technology__item-img position-absolute" src="img/technology2.png" alt="">
+                        </div>
+                        <div class="technology__item-title font-weight-bold">Secure</div>
+                        <div class="technology__item-text">All your information is stored on secure cloud servers</div></div>
+                    <div class="col technology__item text-center">
+                        <div class="technology__item-box d-flex justify-content-center position-relative font-weight-bold">
+                            03
+                            <img class="technology__item-img position-absolute" src="img/technology3.png" alt="">
+                        </div>
+                        <div class="technology__item-title font-weight-bold">PDF Download</div>
+                        <div class="technology__item-text">Download any of your reports in PDF format</div></div>
+                    <div class="col technology__item text-center">
+                        <div class="technology__item-box d-flex justify-content-center position-relative font-weight-bold">
+                            04
+                            <img class="technology__item-img position-absolute" src="img/technology4.png" alt="">
+                        </div>
+                        <div class="technology__item-title font-weight-bold">CSV Download</div>
+                        <div class="technology__item-text">All your information is stored on secure cloud servers</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- .download -->
+    <section class="download">
+        <div class="container">
+            <div class="download__inner">
+                <div class="row download__row text-white d-flex align-items-center">
+                    <div class="col download__content">
+                        <div class="download__content-title">Stay focused on saving money</div>
+                        <div class="download__content-text text-justify">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</div>
+                        <div class="download__content-socials d-flex align-items-center">
+                            <a href="#">
+                                <img src="img/download1.png" alt="" class="download__content-social">
+                            </a>
+                            <a href="#">
+                                <img src="img/download2.png" alt="" class="download__content-social mx-3">
+                            </a>
+                            <a href="#">
+                                <img src="img/download3.png" alt="" class="download__content-social">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col download__image">
+                        <img src="img/slider.png" alt="" class="download__image-slider mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- .contact -->
+    <section class="contact">
+        <div class="container">
+            <div class="row contact__content">
+                <div class="col contact__data">
+                    <div class="contact__data-title">Contact</div>
+                    <div class="contact__data-text text-justify">Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</div>
+                </div>
+                <form class="col contact__form">
+                    <div class="form-row mb-4">
+                        <div class="col mr-4">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <select class="custom-select mb-4">
+                        <option selected>Select Service</option>
+                        <option value="cloud-storage">Cloud Storage</option>
+                        <option value="secure">Secure</option>
+                        <option value="pdf-download">PDF Download</option>
+                        <option value="csv-download">CSV Download</option>
+                    </select>
+                    <button type="button" class="btn btn-light btn-outline-secondary btn-lg px-5 py-3 text-uppercase shadow-none">Submit Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- .footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer__content">
+                <div class="col footer__item">
+                    <div class="footer__item-title font-weight-bold mb-4">Address</div>
+                    <div class="footer__item-address">
+                        Pipang Ltd, Griva Digeni,
+                        81-83 Jacovides Tower, 1st Floor
+                        1090 Picosia USA
+                    </div>
+                </div>
+                <div class="col footer__item">
+                    <div class="footer__item-title font-weight-bold mb-4">Services</div>
+                    <div class="footer__item-links d-flex flex-column">
+                        <a href="#" class="footer__item-link">Overview</a>
+                        <a href="#" class="footer__item-link">Features</a>
+                        <a href="#" class="footer__item-link">Technology</a>
+                        <a href="#" class="footer__item-link">Terms & Conditions</a>
+                        <a href="#" class="footer__item-link">Privacy</a>
+                    </div>
+                </div>
+                <div class="col footer__item">
+                    <div class="footer__item-title font-weight-bold mb-4">Get in Touch</div>
+                    <div class="footer__item-email mb-2">info@cloudbudget.com</div>
+                    <div class="footer__item-number mb-3">+1 844-721-7120</div>
+                    <div class="footer__item-socials d-flex align-items-center">
+                        <a href="#" class="footer__item-social">
+                            <svg class="facebook">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__item-social mx-3">
+                            <svg class="linkedin">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__item-social">
+                            <svg class="twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col footer__item">
+                    <div class="footer__item-title font-weight-bold mb-4">We Support</div>
+                    <div class="footer__item-image">
+                        <img src="img/visa.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">Copyright 2018 CloudBudget</div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
