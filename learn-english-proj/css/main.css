@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+}
+
+/* NAV */
+.nav {
+    background-color: #0a4070;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.nav__logo {
+    width: 105px;
+    height: 70px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__logo-left {
+    display: flex;
+    flex-basis: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo .ez {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.nav__logo .english {
+    color: #4f4f4f;
+}
+
+.nav__link {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* VIDEO */
+.video {
+    display: flex;
+    padding: 0 15px;
+}
+
+.video__content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.video__content video {
+    width: 100%;
+    height: auto;
+}
+
+.video__notes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    flex-basis: 30%;
+}
+
+.video__title {
+    font-size: 35px;
+    color: #000;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.video__notes-textarea-wrapper {
+    height: 80%;
+}
+
+.video__notes textarea {
+    width: 100%;
+    height: 90%;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    color: blue;
+    resize: none;
+}
+
+.video__notes textarea:focus {
+    outline: none;
+}
+
+.video__notes textarea::placeholder {
+    font-size: 25px;
+    text-align: center;
+    padding: 50px 10px 10px;
+}
+
+.video__notes-buttons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.video__notes-buttons .save-note {
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+.video__notes-buttons .done {
+    background-color: #f1f1f1;
+    padding: 15px;
+}
