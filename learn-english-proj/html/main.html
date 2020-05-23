@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>EZ English</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo-left">
+                <a class="nav__logo" href="./index.html">
+                    <div class="ez">EZ</div>
+                    <div class="english">ENGLISH</div>
+                </a>
+            </div>
+            <div class="nav__logo-right">
+                <div>
+                    <a class="nav__link" href="#">Видео уроки</a>
+                    <a class="nav__link" href="./vocabulary.html">Вокабуляр</a>
+                    <a class="nav__link" href="./meditation.html">Медитация</a>
+                </div>
+                <div>
+                    <a class="nav__link" href="#">Профиль</a>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <svg width="15px" height="15px" version="1.1" id="Capa_1" xmlns="https://www.w3.org/2000/svg"
+                    xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 469.333 469.333"
+                    style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
+                    <g>
+                        <path d="M53.333,106.667H416c29.417,0,53.333-23.927,53.333-53.333S445.417,0,416,0H53.333C23.917,0,0,23.927,0,53.333
+				S23.917,106.667,53.333,106.667z" />
+                        <path d="M416,181.333H53.333C23.917,181.333,0,205.26,0,234.667S23.917,288,53.333,288H416c29.417,0,53.333-23.927,53.333-53.333
+				S445.417,181.333,416,181.333z" />
+                        <path d="M416,362.667H53.333C23.917,362.667,0,386.594,0,416s23.917,53.333,53.333,53.333H416
+				c29.417,0,53.333-23.927,53.333-53.333S445.417,362.667,416,362.667z" />
+                    </g>
+                </svg>
+            </div>
+        </nav>
+        <section class="video">
+            <div class="video__content">
+                <h2 class="video__title">Название темы</h2>
+                <video controls autoplay>
+                    <source src="../assets/video/articles.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="video__notes">
+                <h2 class="video__title">Заметки</h2>
+                <div class="video__notes-textarea-wrapper">
+                    <textarea placeholder="Заметки студента по теме"></textarea>
+                </div>
+                <div class="video__notes-buttons">
+                    <a class="save-note" href="#">сохранить</a>
+                    <a class="done" href="#">
+                        урок освоен
+                        <input type="checkbox">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
