@@ -1,0 +1,207 @@
+.vocabulary {
+    padding: 15px;
+}
+
+.vocabulary form {
+    text-align: center;
+}
+
+.vocabulary__input {
+    min-width: 400px;
+    padding: 15px 20px;
+    background-color: #ece7e7;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 22px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s;
+}
+
+.vocabulary__input:hover {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.vocabulary__input:focus {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+}
+
+#searchForm input[type=submit] {
+    margin: 0px 20px;
+    padding: 15px 30px;
+    background-color: #03fcd7;
+    color: rgba(117, 89, 89, 0.904);
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+
+#searchForm input[type=reset] {
+    padding: 15px 40px;
+    background-color: #f3b786;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+
+.translation {
+    margin-top: 20px;
+}
+
+.translation h2 {
+    display: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.translation__result-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 80%;
+}
+
+.translation__result {
+    list-style: none;
+    padding: 10px;
+    width: 33.333%;
+}
+
+.translation__result li {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.translation__wrapper {
+    display: flex;
+    flex-basis: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.translation__word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.translation__word {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.translation__image-wrapper {
+    width: 33.333%;
+}
+
+.translation__image {
+    width: 100%;
+    height: auto;
+}
+
+#searchForm h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.translation__audio {
+    display: flex;
+    width: 33.333%;
+    padding: 20px 10px;
+}
+
+.translation__audio audio {
+    width: 100%;
+}
+
+.translation__result-wrapper audio:focus {
+    outline: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .vocabulary__input {
+        min-width: 300px;
+    }
+
+    #searchForm input[type=submit],
+    #searchForm input[type=reset] {
+        padding: 15px;
+    }
+
+    #searchForm input[type=submit] {
+        margin: 0 10px;
+    }
+
+    .translation__wrapper {
+        flex-direction: column;
+    }
+
+    .translation__result-wrapper {
+        flex-direction: column;
+    }
+
+    .translation__result {
+        width: 100%;
+        text-align: center;
+    }
+
+    .translation__audio {
+        width: 60%;
+    }
+
+    .translation__image-wrapper {
+        width: 90%;
+    }
+
+    .translation__word {
+        border-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .vocabulary form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #searchForm input[type=submit],
+    #searchForm input[type=reset] {
+        align-self: center;
+        margin: 7px 0;
+        padding: 15px 50px;
+    }
+
+    .translation__audio {
+        width: 90%;
+    }
+}
+
+@media (max-width: 320px) {
+    #searchForm h1 {
+        font-size: 30px;
+    }
+
+    .vocabulary__input {
+        min-width: 250px;
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    #searchForm input[type=submit],
+    #searchForm input[type=reset] {
+        padding: 10px 20px;
+    }
+
+    .translation h2 {
+        text-align: center;
+    }
+}
